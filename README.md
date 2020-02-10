@@ -6,7 +6,7 @@ This mini library provides interfaces for converting strings to types and workin
 
 Just include the single header and go!
 
-Tested on gcc 9.0.1 with: `g++ example.cpp -std=c++2a -o example.out -O3 -pedantic -Wall`
+Tested on gcc 9.2 with: `g++ example.cpp -std=c++2a -o example.out -O3 -pedantic -Wall`
 
 ## Info
 
