@@ -1,3 +1,5 @@
+[![Compiler explorer](https://img.shields.io/badge/compiler_explorer-online-blue.svg)](https://godbolt.org/z/EnYz8z)
+
 # metastring
 
 This mini library provides interfaces for converting strings to types and working with those types at compile time.
