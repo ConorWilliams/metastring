@@ -2,7 +2,7 @@
 
 This mini library provides interfaces for converting strings to types and working with those types at compile time.
 
-Just inlude the single header and go!
+Just include the single header and go!
 
 Tested on gcc 9.0.1 with: `g++ example.cpp -std=c++2a -o example.out -O3 -pedantic -Wall`
 
@@ -17,8 +17,7 @@ template <char... args> struct meta::string;
 Therefore any operations can be performed on them using variadic template meta programming, this < 150 loc library does 
 not aspire to provide many of these operations as they can be easily implemented in the standard way.
 
-Instead metastring focuses on construction meta::string types and makes passing strings as template parameters to custom 
-classes easy.
+Instead metastring focuses on constructing meta::string types by 'exploding' string literals and makes passing strings as template parameters to custom classes easy.
 
 ## Examples
 
@@ -102,8 +101,7 @@ std::cout << cat << std::endl;
 
 ### Custom classes 
 
-You can use metastring to make templates accepting string literals like meta::stom_t does by using the meta::wrap 
-and meta::unwrap helpers:
+You can use metastring to make templates accepting string literals like meta::stom_t does by using the meta::wrap and meta::unwrap helpers:
 ```c++
 template <meta::wrap Str>
 struct my_class {
